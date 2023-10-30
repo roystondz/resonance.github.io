@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>Resonance</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script>window.addEventListener("scroll", function() {
+    var header = document.querySelector(".header");
+    
+    if (window.scrollY > 700) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+  </script>
+<script src="https://kit.fontawesome.com/397a49b8f3.js" crossorigin="anonymous"></script>
+<body>
+    <header class="header">
+        <a class="navbar-brand" href="index.html"><h2 class="res">Resonance<em> for musicians</em></h2></a>
+    <nav class="navbar">
+        <a href="index 2.html">Home</a>
+        <a href="Musicians.html">Our musicians</a>
+        <a href="About.html">About Us</a>
+        
+        <div class="account">
+          <a href="#" class="account-link">My Account</a>
+          <div class="profile-menu">
+              <a href="#">Profile</a>
+              <a href="index.html">Signout</a>
+          </div>
+      </div>
+    </div>
+    </nav>
+    </header>
+    
+    
+  
+      <div class="container-search">
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search for musicians..." id="myFilter"  onkeyup="myFunction()">
+          <button type="button" onclick="myFunction()">Search</button>
+        </form>
+      </div>
+      
+        
+    </div>
+    <div class="latest-musicians-second" style="margin-top: -10px;">
+      <div class="container-holder">
+        <div class="row" id="row" style="padding-left: 10px;">
+          
+            
+          
+          
+            <div class="person-item">
+              <a href="#"><img src="assets/images/prs.jpg" alt=""></a>
+              <div class="down-content">
+                
+                <a href="personal.html" ><h4 class="card-title">Pandit Ravi Shankar</h4></a>
+                                 
+                <p>He has Mastered Hindustani Classical Sitar. Throughout his journey he has taught many Students</p>
+                
+                <span>Reviews (24)</span>
+                <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+              
+            </div>
+          </div>
+          
+            <div class="person-item">
+              <a href="#"><img src="assets/images/zh.jpeg" alt=""></a>
+              <div class="down-content">
+                <a href="#" ><h4 class="card-title">Zakir Khan</h4></a>
+                
+                <p>The pre-eminent tabla virtuoso, world's great musician, esteemed as a groundbreaking collaborator  <br>  </p><br>
+                
+                <span>Reviews (21)</span>
+                
+                <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+              
+            </div>
+          </div>
+          <div class="popup" id="popup">
+            <img src="assets/images/ftick.jpeg" alt="tick">
+            <h2>Thank You!!</h2>
+            <p>We will get in touch with you shorty</p>
+            <button type="submit" onclick="closePopup()">Ok</button>
+          </div>
+          
+            <div class="person-item">
+              <a href="#"><img src="assets/images/prpc.jpeg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4 class="card-title">Hariprasad Chaurasia</h4></a>
+                
+                <p>Pandit Hariprasad Chaurasia, is a world-renowned exponent of the bansuri or bamboo flute.</p>
+                <br>
+                <span>Reviews (36)</span>
+                <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+              
+            </div>
+          </div>
+
+          <div class="person-item">
+            <a href="#"><img src="assets/images/AR.jpeg" alt=""></a>
+            <div class="down-content">
+              
+              <a href="#" ><h4 class="card-title">A. R. Rahman</h4></a>
+                               
+              <p>Allah Rakha Rahman is an Indian music composer, record producer, singer, songwriter, musician, multi-instrumentalist and philanthropist, popular for his works in Indian cinema; predominantly in Tamil and Hindi films, with occasional forays in international cinema.</p>
+              
+              <span>Reviews (20)</span>
+              <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+            
+          </div>
+        </div>
+
+        <div class="person-item">
+          <a href="#"><img src="assets/images/ajmaad.jpeg" alt=""></a>
+          <div class="down-content">
+            
+            <a href="#" ><h4 class="card-title">Amjad Ali Khan</h4></a>
+                             
+            <p>Sarod Maestro ‘Amjad Ali Khan Bangash’ was born on 9 October, 1945 in a classical music family. He is popularly known for clear and fast ‘ekhara taans’.</p>
+            <br><br><br>
+            <span>Reviews (28)</span>
+            <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+          
+        </div>
+      </div>
+
+      <div class="person-item">
+        <a href="#"><img src="assets/images/armaan.jpeg.webp" alt=""></a>
+        <div class="down-content">
+          
+          <a href="#" ><h4 class="card-title">Armaan Malik</h4></a>
+                           
+          <p>Armaan Malik is an Indian singer (born July 22, 1995 in Mumbai, Maharashtra, India), previously represented by Universal Music India, and now signed on by T-Series. A finalist on Sa Re Ga Ma Pa L'il Champs Armaan advanced to eighth place with public votes.</p>
+          
+          <span>Reviews (24)</span>
+          <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+        
+      </div>
+    </div>
+
+    <div class="person-item">
+      <a href="#"><img src="assets/images/sidhu.jpeg" alt=""></a>
+      <div class="down-content">
+        
+        <a href="#" ><h4 class="card-title">Sidhu Moose Wala</h4></a>
+                         
+        <p>Sidhu Moose Wala hails from the village of Moosa in Mansa district of Punjab. He was born to Balkaur Singh and Charan Kaur. After graduation, Sidhu Moose Wala moved to Canada and there he released his first song "G Wagon". He started to perform live in India in 2018. He had also performed successful live shows in Canada.</p>
+        <br>
+        <span>Reviews (24)</span>
+        <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+      
+    </div>
+  </div>
+
+  <div class="person-item">
+    <a href="#"><img src="assets/images/vishal.jpeg" alt=""></a>
+    <div class="down-content">
+      <br>
+      <a href="#" ><h4 class="card-title">Vishal Mishra</h4></a>
+                       
+      <p>Vishal Mishra is an Indian music composer and singer. He first appeared in a reality show aired on DD National. In his initial days of the music industry, Mishra was guided by Lalit Pandit, of the Jatin–Lalit composer duo. </p>
+      <br><br><br>
+      <span>Reviews (24)</span>
+      <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+    
+  </div>
+</div>
+            
+<div class="person-item">
+  <a href="#"><img src="assets/images/yd.jpeg" alt=""></a>
+  <div class="down-content">
+    <a href="#"><h4 class="card-title">The Yellow Diary</h4></a>
+    
+    <p>The Yellow Diary is a band that has made a name for itself in the indie music scene in less than half a decade. The Mumbai-based alternative rock outfit has released six songs in two EPs, in addition to performing hundreds of live shows across the country.</p>
+    <br>
+    <span>Reviews (18)</span>
+    <button class="chkbtn" type="submit" onclick="openPopup()">Book now</button>
+  
+</div>
+</div>
+
+            
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    
+    
+  
+      <div class="best-features">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2>About Resonance</h2>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="left-content">
+                <h4>Looking for musicians for your next Concert?</h4>
+                <p> Our mission is straightforward yet profound: to unite musicians worldwide, transcending boundaries and nurturing the creative spirit. We firmly believe that when musicians resonate together, they create something truly magical. <a rel="nofollow" href="#">Contact us</a> for more info.</p>
+                
+                <a href="about.html" class="filled-button">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-image">
+                <img src="assets/images/Transparentlogo.png" alt="">              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="call-to-action">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="inner-content">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>Creative &amp; Unique <em>Musical</em> Products</h4>
+                    <p>Use the code Resonance to purchase your next Musical instrument to Get flat 5% discount</p>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="filled-button">Purchase Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="inner-content">
+                <p>Copyright &copy; 2023 Resonance for Musicians Co., Ltd.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="searchengine.js"></script>
+      <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+          popup.classList.add("open-popup");
+        }
+        function closePopup(){
+          popup.classList.remove("open-popup");
+        }
+      </script>
+    
+</body>
+</html>
